@@ -47,5 +47,3 @@ It transforms raw review data into actionable insights using **Python, NLTK, Tex
 5. **Topic Modeling** → Extract 5 latent topics using NMF  
 6. **Visualizations** → Pie chart, bar plots, word clouds  
 
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
