@@ -1,49 +1,73 @@
-# 📊 Sentiment & Topic Analysis of Customer Reviews
+📊 Sentiment & Topic Analysis of Customer Reviews
+This repository contains a complete pipeline for text analysis on customer reviews, including preprocessing, sentiment analysis, and visualization. 
+It transforms raw review data into actionable insights using Python, NLTK, TextBlob, and various visualization tools.
 
-This repository contains a **complete pipeline for text analysis** on customer reviews, including preprocessing, sentiment analysis, topic modeling, and visualization. 
-It transforms raw review data into actionable insights using **Python, NLTK, TextBlob, Scikit-learn, and visualization tools**.
+🚀 Features
+✅ Data Preprocessing
 
----
+Remove missing values
 
-## 🚀 Features
+Lowercasing, cleaning special characters
 
-- ✅ **Data Preprocessing**  
-  - Remove missing values  
-  - Lowercasing, cleaning special characters  
-  - Tokenization & stopword removal  
+Tokenization & stopword removal
 
-- ✅ **Sentiment Analysis**  
-  - Uses **TextBlob** for polarity scoring  
-  - Categorizes reviews as *Positive, Negative, Neutral*  
+✅ Sentiment Analysis
 
-- ✅ **Topic Modeling**  
-  - TF-IDF + **NMF (Non-negative Matrix Factorization)**  
-  - Extracts top keywords for each topic  
-  - Assigns dominant topics to reviews  
+Uses TextBlob for polarity scoring
 
-- ✅ **Visualizations**  
-  - Sentiment distribution pie chart  
-  - Top words per topic (bar plots)  
-  - Word clouds for each topic  
+Categorizes reviews as Positive, Negative, Neutral
 
----
+✅ Topic Modeling
 
-## 🛠️ Tech Stack
+Extracts latent topics
 
-- **Python**  
-- `pandas`, `numpy`  
-- `nltk`, `textblob`  
-- `scikit-learn`  
-- `matplotlib`, `seaborn`, `wordcloud`  
+Generates word clouds for each topic
 
----
+✅ Visualizations
 
-## 📂 Workflow
+Sentiment distribution pie chart
 
-1. **Load Data** → Import Excel file (`gba_2.xlsx`)  
-2. **Preprocess Text** → Clean, tokenize, and remove stopwords  
-3. **Save Preprocessed Data** → `processed_reviews.xlsx`  
-4. **Sentiment Analysis** → Save results in `reviews_with_sentiment.xlsx`  
-5. **Topic Modeling** → Extract 5 latent topics using NMF  
-6. **Visualizations** → Pie chart, bar plots, word clouds  
+Word clouds for each topic
 
+🛠️ Tech Stack
+Python
+
+pandas
+
+openpyxl
+
+nltk
+
+textblob
+
+matplotlib
+
+seaborn
+
+wordcloud
+
+📂 Workflow
+Load Data → Import customer review data from gba_2.xlsx.
+
+Preprocess Text → Clean, tokenize, and remove stopwords. The flipkart gba_1.ipynb notebook handles these steps.
+
+Save Preprocessed Data → The cleaned data is saved to processed_reviews.xlsx.
+
+Sentiment Analysis → Sentiment scores and categories are generated and saved to reviews_with_sentiment.xlsx.
+
+Topic Modeling → Word clouds are generated to highlight key topics.
+
+Visualizations → Pie charts and word clouds are created to visualize the findings.
+
+▶️ How to Run
+Make sure you have the required libraries installed by running the following commands in your terminal or a Jupyter notebook cell:
+
+Bash
+
+pip install pandas openpyxl
+pip install nltk
+pip install textblob
+pip install matplotlib seaborn wordcloud
+First, run the flipkart gba_1.ipynb notebook to preprocess the data and create the preprocessed_data.xlsx file.
+
+Next, run the gba_2.ipynb notebook to perform the sentiment and topic analysis, and generate the visualizations.
